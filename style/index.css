@@ -1,1 +1,142 @@
 /* Add CSS styling here */
+
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	--Green: #99B898;
+	--Peach: #FECEAB;
+	--Raspberry: #FF847C;
+	--Red: #E84A5F;
+	--Grey: #2A363B;
+  }
+
+
+
+
+body{
+    background-color: var(--Green);
+	padding: 50px;
+	
+}
+.wrapper{
+	border: 15px solid var(--Grey);
+	border-radius: 15px;
+}
+h1 {
+    font-family: 'Tangerine', serif;
+    font-size: 44px;
+    text-shadow: 4px 4px 4px var(--Grey);
+	color: white;
+	padding-bottom: 50px;
+	
+  }
+
+.header{
+	background-color: var(--Grey);
+	padding: 15px;
+}
+.top-nav{
+	padding-bottom: 15px;
+}
+.top-nav a{
+	margin: 0 5px;
+	border: 1px solid var(--Red);
+	padding: 5px;
+	display: inline-block;
+	color: var(--Raspberry);
+	text-decoration: none;
+	margin-bottom: 5px;
+	background-color: var(--Grey);
+	width: 100px;
+	text-align: center;
+	font-size: 16px;
+  }
+  .top-nav a:hover{
+	margin: 0 5px;
+	border: 1px solid var(--Red);
+	padding: 5px;
+	display: inline-block;
+	color: var(--Grey);
+	text-decoration: none;
+	margin-bottom: 5px;
+	background-color: var(--Raspberry);
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+	animation: wobble-ver-left 0.8s both;
+  }
+	@keyframes wobble-ver-left {
+		0%,
+		100% {
+		  transform: translateY(0) rotate(0);
+		  transform-origin: 50% 50%;
+		}
+		15% {
+		  transform: translateY(-10px) rotate(-16deg);
+		}
+		30% {
+		  transform: translateY(15px) rotate(6deg);
+		}
+		45% {
+		  transform: translateY(-15px) rotate(-3.6deg);
+		}
+		60% {
+		  transform: translateY(9px) rotate(2.4deg);
+		}
+		75% {
+		  transform: translateY(-6px) rotate(-1.2deg);
+		}
+	  }
+	 
+
+
+/*  */
+
