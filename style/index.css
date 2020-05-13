@@ -70,7 +70,8 @@ table {
         p {
             font-family: Montserrat;
             font-size: 1rem;
-            padding: 2rem 0;
+            padding: .5rem 0;
+            letter-spacing: .15rem;
         }
         h1 {
             font-family: 'Tangerine', serif;
@@ -81,7 +82,7 @@ table {
         }
         h2{
             font-family: 'Montserrat', serif;
-            font-size: 1rem;
+            font-size: 1.5rem;
             color: var(--Red);
             font-weight: 1000;
             padding: 1.5rem 0; 
@@ -144,13 +145,11 @@ table {
             display: block;
         }
         .top-item {
-            border: 15px solid var(--Grey);
             padding: 15px;
             width: 50%;
             margin: 5px;
             font-size: 15px;
         }
-
         .projects-grid {
             padding: 10% 0;
             display: flex;
@@ -160,31 +159,35 @@ table {
         }
         .projects-grid-item {
             border: 5px solid var(--Grey);
-            padding: 15px;
-            width: 50%;
-            margin: 15px;
-            font-size: 15px;
+            padding: .25x;
+            margin: 15px
             width: 25%;
         }
         .break {
             flex-basis: 100%;
             width: 0;
         }
-        .projects-button{
+        .button{
             box-shadow: 0px 10px 14px -7px #3e7327;
             background-color: var(--Green);
-            border-radius:-4px;
+            border-radius: 4px;
             border:1px solid var(--Grey);
             display:inline-block;
             color: var(--Grey);
+            font-family: Montserrat;
             font-weight:bold;
-            padding:.5rem 1rem;
+            padding: .5rem;
             text-shadow:0px 1px 0px var(--Grey);
+            margin: 0 0 1rem 0;
+            letter-spacing: .15rem;
         }
-        .projects-button:hover{
+        .button:hover{
             background-color: var(--Grey);
             color: var(--Green);
                }
+        .label{
+            text-align: center;
+        }   text-size: 1rem;
     /* KeyFrames */
         @keyframes nav-ani {
                     10%, 90% {
