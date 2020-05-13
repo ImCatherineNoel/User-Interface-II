@@ -62,140 +62,145 @@ table {
 
 /* Page CSS  */
 
-body {
-    background-color: var(--Green);
-    padding: 50px;
-}
+    /* Elements */
+        body {
+            background-color: var(--Green);
+            padding: 50px;
+        }
+        p {
+            font-family: Montserrat;
+            font-size: 1rem;
+            padding: 2rem 0;
+        }
+        h1 {
+            font-family: 'Tangerine', serif;
+            font-size: 5rem;
+            text-shadow: 4px 4px 4px var(--Grey);
+            color: antiquewhite;
+            padding-bottom: 1rem;
+        }
+        h2{
+            font-family: 'Montserrat', serif;
+            font-size: 1rem;
+            color: var(--Red);
+            font-weight: 1000;
+            padding: 1.5rem 0; 
+        }
+        footer {
+        background-color: var(--Grey);
+        padding: 15px;
+        margin: 0 auto;
+        text-align: center;
+        }
+    /* Classes */
+        .wrapper {
+            border: 15px solid var(--Grey);
+            border-radius: 15px;
+        }
+        .header {
+            background-color: var(--Grey);
+            padding: 15px;
+        }
+        .top-nav {
+            padding-bottom: 15px;
+        }
+        .top-nav a {
+            margin: 0 5px 5px;
+            border: 1px solid var(--Red);
+            padding: 5px;
+            display: inline-block;
+            color: var(--Raspberry);
+            text-decoration: none;
+            background-color: var(--Grey);
+            width: 100px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .top-nav a:hover {
+            margin: 0 5px 5px;
+            border: 1px solid var(--Red);
+            padding: 5px;
+            display: inline-block;
+            color: var(--Grey);
+            text-decoration: none;
+            background-color: var(--Raspberry);
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+            animation: nav-ani 0.8s both;
+        }
+        .main{
+            background-color: antiquewhite;
+        }
+        .top-flex {
+            padding: 3% 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .responsive {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .top-item {
+            border: 15px solid var(--Grey);
+            padding: 15px;
+            width: 50%;
+            margin: 5px;
+            font-size: 15px;
+        }
 
-.wrapper {
-    border: 15px solid var(--Grey);
-    border-radius: 15px;
-}
-
-h1 {
-    font-family: 'Tangerine', serif;
-    font-size: 44px;
-    text-shadow: 4px 4px 4px var(--Grey);
-    color: antiquewhite;
-    padding-bottom: 50px;
-}
-
-.header {
-    background-color: var(--Grey);
-    padding: 15px;
-}
-
-.top-nav {
-    padding-bottom: 15px;
-}
-
-.top-nav a {
-    margin: 0 5px 5px;
-    border: 1px solid var(--Red);
-    padding: 5px;
-    display: inline-block;
-    color: var(--Raspberry);
-    text-decoration: none;
-    background-color: var(--Grey);
-    width: 100px;
-    text-align: center;
-    font-size: 16px;
-}
-
-.top-nav a:hover {
-    margin: 0 5px 5px;
-    border: 1px solid var(--Red);
-    padding: 5px;
-    display: inline-block;
-    color: var(--Grey);
-    text-decoration: none;
-    background-color: var(--Raspberry);
-    width: 100px;
-    text-align: center;
-    font-weight: bold;
-    animation: nav-ani 0.8s both;
-}
-
-@keyframes nav-ani {
-	10%, 90% {
-		transform: translate3d(-1px, 0, 0);
-	  }
-	  
-	  20%, 80% {
-		transform: translate3d(2px, 0, 0);
-	  }
-	
-	  30%, 50%, 70% {
-		transform: translate3d(-4px, 0, 0);
-	  }
-	
-	  40%, 60% {
-		transform: translate3d(4px, 0, 0);
-	  }
-}
-
-.main{
-    background-color: antiquewhite;
-}
-
-
-.top-flex {
-    padding: 3% 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   /*
-   Visualization border:  
-   border-top: 15px solid white;
-   */
-}
-
-.responsive {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-
-.top-item {
-    border: 15px solid var(--Grey);
-    padding: 15px;
-    width: 50%;
-    margin: 5px;
-    font-size: 15px;
-}
-
-.projects-grid {
-    padding: 10% 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.projects-grid-item {
-    border: 5px solid var(--Grey);
-    padding: 15px;
-    width: 50%;
-    margin: 15px;
-    font-size: 15px;
-    width: 25%;
-}
-
-.break {
-    flex-basis: 100%;
-    width: 0;
-}
-
-footer {
-    background-color: var(--Grey);
-    padding: 15px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-
-
-
-
+        .projects-grid {
+            padding: 10% 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .projects-grid-item {
+            border: 5px solid var(--Grey);
+            padding: 15px;
+            width: 50%;
+            margin: 15px;
+            font-size: 15px;
+            width: 25%;
+        }
+        .break {
+            flex-basis: 100%;
+            width: 0;
+        }
+        .projects-button{
+            box-shadow: 0px 10px 14px -7px #3e7327;
+            background-color: var(--Green);
+            border-radius:-4px;
+            border:1px solid var(--Grey);
+            display:inline-block;
+            color: var(--Grey);
+            font-weight:bold;
+            padding:.5rem 1rem;
+            text-shadow:0px 1px 0px var(--Grey);
+        }
+        .projects-button:hover{
+            background-color: var(--Grey);
+            color: var(--Green);
+               }
+    /* KeyFrames */
+        @keyframes nav-ani {
+                    10%, 90% {
+                        transform: translate3d(-1px, 0, 0);
+                    }
+                    
+                    20%, 80% {
+                        transform: translate3d(2px, 0, 0);
+                    }
+                    
+                    30%, 50%, 70% {
+                        transform: translate3d(-4px, 0, 0);
+                    }
+                    
+                    40%, 60% {
+                        transform: translate3d(4px, 0, 0);
+                    }
+                }
 /* End  */
