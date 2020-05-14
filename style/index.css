@@ -65,27 +65,29 @@ table {
     /* Elements */
         body {
             background-color: var(--Green);
-            padding: 50px;
+            margin: auto;
+            max-width: 800px;
         }
         p {
             font-family: Montserrat;
             font-size: 1rem;
             padding: .5rem 0;
-            letter-spacing: .15rem;
+            letter-spacing: .25rem;
+            line-height: 2rem;
         }
         h1 {
             font-family: 'Tangerine', serif;
             font-size: 5rem;
             text-shadow: 4px 4px 4px var(--Grey);
             color: antiquewhite;
-            padding-bottom: 1rem;
+            padding-bottom: 3rem;
         }
         h2{
             font-family: 'Montserrat', serif;
             font-size: 1.5rem;
             color: var(--Red);
             font-weight: 1000;
-            padding: 1.5rem 0; 
+            padding: 2rem 0; 
         }
         footer {
         background-color: var(--Grey);
@@ -96,7 +98,8 @@ table {
     /* Classes */
         .wrapper {
             border: 15px solid var(--Grey);
-            border-radius: 15px;
+            max-width: 900px;
+            justify-content: center;
         }
         .header {
             background-color: var(--Grey);
@@ -168,18 +171,25 @@ table {
             margin: 5px;
             font-size: 15px;
         }
-        .projects-grid {
+        .project-grid {
             padding: 10% 0;
+            padding: 1rem 1rem;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             flex-wrap: wrap;
+            max-width: 100%;
         }
-        .projects-grid-item {
-            border: 5px solid var(--Grey);
-            padding: .25x;
-            margin: 15px
-            width: 25%;
+        .project-grid-item {
+            justify-content: center;
+            padding: .25rem;
+            margin: 0rem;
+            max-width: 20%;              
+        }
+        .project-grid-item img{
+            text-align: center;
+            width: 100%;
+            height: auto;
         }
         .break {
             flex-basis: 100%;
@@ -205,6 +215,7 @@ table {
                }
         .label{
             text-align: center;
-        }   text-size: 1rem;
-
+            font-size: 1.3rem;
+            font-style: italic;
+        }
 /* End  */
