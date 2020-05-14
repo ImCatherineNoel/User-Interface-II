@@ -130,6 +130,24 @@ table {
             font-weight: bold;
             animation: nav-ani 0.8s both;
         }
+        /* KeyFrames */
+        @keyframes nav-ani {
+                    10%, 90% {
+                        transform: translate3d(-1px, 0, 0);
+                    }
+                    
+                    20%, 80% {
+                        transform: translate3d(2px, 0, 0);
+                    }
+                    
+                    30%, 50%, 70% {
+                        transform: translate3d(-4px, 0, 0);
+                    }
+                    
+                    40%, 60% {
+                        transform: translate3d(4px, 0, 0);
+                    }
+                }
         .main{
             background-color: antiquewhite;
         }
@@ -188,22 +206,5 @@ table {
         .label{
             text-align: center;
         }   text-size: 1rem;
-    /* KeyFrames */
-        @keyframes nav-ani {
-                    10%, 90% {
-                        transform: translate3d(-1px, 0, 0);
-                    }
-                    
-                    20%, 80% {
-                        transform: translate3d(2px, 0, 0);
-                    }
-                    
-                    30%, 50%, 70% {
-                        transform: translate3d(-4px, 0, 0);
-                    }
-                    
-                    40%, 60% {
-                        transform: translate3d(4px, 0, 0);
-                    }
-                }
+
 /* End  */
