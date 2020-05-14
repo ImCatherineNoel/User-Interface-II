@@ -135,24 +135,24 @@ table {
             font-weight: bold;
             animation: nav-ani 0.8s both;
         }
-        /* KeyFrames */
-        @keyframes nav-ani {
-                    10%, 90% {
-                        transform: translate3d(-0.1rem, 0, 0);
-                    }
-                    
-                    20%, 80% {
-                        transform: translate3d(0.2rem, 0, 0);
-                    }
-                    
-                    30%, 50%, 70% {
-                        transform: translate3d(-0.4rem, 0, 0);
-                    }
-                    
-                    40%, 60% {
-                        transform: translate3d(0.4rem, 0, 0);
-                    }
+         /* KeyFrames */
+            @keyframes nav-ani {
+                10%, 90% {
+                    transform: translate3d(-0.1rem, 0, 0);
                 }
+                
+                20%, 80% {
+                    transform: translate3d(0.2rem, 0, 0);
+                }
+                
+                30%, 50%, 70% {
+                    transform: translate3d(-0.4rem, 0, 0);
+                }
+                
+                40%, 60% {
+                    transform: translate3d(0.4rem, 0, 0);
+                }
+            }
         .main{
             background-color: antiquewhite;
         }
@@ -219,5 +219,49 @@ table {
             font-size: 1.2rem;
             font-style: italic;
         }
+    /* Media Query : 800px  */
+    @media(max-width: 800px){
+        .wrapper{
+            max-width: 700px;
+        }
+        .top-item {
+            padding: 0.5rem;
+            width: 40%;
+            margin: 0.5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+
+    /* Media Query : 500px  */
+    @media(max-width: 500px){
+        p{
+            font-size: 1.6rem;
+        }
+        .top-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .wrapper{
+            justify-content: space-evenly;
+            max-width: 400px;
+        }
+        .top-flex {
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .top-item img{
+            padding: 0;
+        }
+        .top-item {
+            padding: ;
+            width: 100%;
+        }
+
+    }
 
 /* End  */
