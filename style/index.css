@@ -169,7 +169,7 @@ table {
         }
         .top-item {
             padding: 1.5rem;
-            width: 50%;
+            width: 100%;
             margin: 0.5rem;
             font-size: 1.5rem;
         }
@@ -221,14 +221,21 @@ table {
         }
     /* Media Query : 800px  */
     @media(max-width: 800px){
-        .wrapper{
-            max-width: 700px;
+        .main{
+            margin: auto;
         }
-        .top-item {
-            padding: 0.5rem;
-            width: 40%;
-            margin: 0.5rem;
-            font-size: 1.5rem;
+        .wrapper{
+            max-width: 600px;
+        }
+        .top-flex {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .top-item img{
+            display: none;
         }
     }
 
@@ -254,12 +261,10 @@ table {
             justify-content: center;
             align-items: center;
         }
-        .top-item img{
-            padding: 0;
-        }
         .top-item {
-            padding: ;
+            padding: 0;
             width: 100%;
+            
         }
 
     }
