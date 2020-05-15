@@ -260,13 +260,19 @@ table {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
         }
         .top-item {
-            padding: 0;
-            width: 100%;
-            
+            padding: 1rem;            
+            height: auto;
+            margin: 0rem;
         }
-
+        .project-grid-item {
+            justify-content: center;
+            padding: .25rem;
+            margin: 0rem;
+            max-width: 100rem;               
+        }
     }
 
 /* End  */
