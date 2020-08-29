@@ -1,1 +1,221 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* DecVar  */
+
+:root {
+    --Green: #99B898;
+    --Peach: #FECEAB;
+    --Raspberry: #FF847C;
+    --Red: #E84A5F;
+    --Grey: #2A363B;
+}
+
+
+
+/* Page CSS  */
+
+    /* Elements */
+        body {
+            background-color: var(--Green);
+            margin: auto;
+            max-width: 800px;
+        }
+        p {
+            font-family: Montserrat;
+            font-size: 1rem;
+            padding: .5rem 0;
+            letter-spacing: .25rem;
+            line-height: 2rem;
+        }
+        h1 {
+            font-family: 'Tangerine', serif;
+            font-size: 5rem;
+            text-shadow: 4px 4px 4px var(--Grey);
+            color: antiquewhite;
+            padding-bottom: 3rem;
+        }
+        h2{
+            font-family: 'Montserrat', serif;
+            font-size: 1.5rem;
+            color: var(--Red);
+            font-weight: 1000;
+            padding: 2rem 0; 
+        }
+        footer {
+        background-color: var(--Grey);
+        padding: 15px;
+        margin: 0 auto;
+        text-align: center;
+        }
+    /* Classes */
+        .wrapper {
+            border: 15px solid var(--Grey);
+            max-width: 900px;
+            justify-content: center;
+        }
+        .header {
+            background-color: var(--Grey);
+            padding: 15px;
+        }
+        .top-nav {
+            padding-bottom: 15px;
+        }
+        .top-nav a {
+            margin: 0 5px 5px;
+            border: 1px solid var(--Red);
+            padding: 5px;
+            display: inline-block;
+            color: var(--Raspberry);
+            text-decoration: none;
+            background-color: var(--Grey);
+            width: 100px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .top-nav a:hover {
+            margin: 0 5px 5px;
+            border: 1px solid var(--Red);
+            padding: 5px;
+            display: inline-block;
+            color: var(--Grey);
+            text-decoration: none;
+            background-color: var(--Raspberry);
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+            animation: nav-ani 0.8s both;
+        }
+        /* KeyFrames */
+        @keyframes nav-ani {
+                    10%, 90% {
+                        transform: translate3d(-1px, 0, 0);
+                    }
+                    
+                    20%, 80% {
+                        transform: translate3d(2px, 0, 0);
+                    }
+                    
+                    30%, 50%, 70% {
+                        transform: translate3d(-4px, 0, 0);
+                    }
+                    
+                    40%, 60% {
+                        transform: translate3d(4px, 0, 0);
+                    }
+                }
+        .main{
+            background-color: antiquewhite;
+        }
+        .top-flex {
+            padding: 3% 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .responsive {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .top-item {
+            padding: 15px;
+            width: 50%;
+            margin: 5px;
+            font-size: 15px;
+        }
+        .project-grid {
+            padding: 10% 0;
+            padding: 1rem 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+        .project-grid-item {
+            justify-content: center;
+            padding: .25rem;
+            margin: 0rem;
+            max-width: 20%;              
+        }
+        .project-grid-item img{
+            text-align: center;
+            width: 100%;
+            height: auto;
+        }
+        .break {
+            flex-basis: 100%;
+            width: 0;
+        }
+        .button{
+            box-shadow: 0px 10px 14px -7px #3e7327;
+            background-color: var(--Green);
+            border-radius: 4px;
+            border:1px solid var(--Grey);
+            display:inline-block;
+            color: var(--Grey);
+            font-family: Montserrat;
+            font-weight:bold;
+            padding: .5rem;
+            text-shadow:0px 1px 0px var(--Grey);
+            margin: 0 0 1rem 0;
+            letter-spacing: .15rem;
+        }
+        .button:hover{
+            background-color: var(--Grey);
+            color: var(--Green);
+               }
+        .label{
+            text-align: center;
+            font-size: 1.3rem;
+            font-style: italic;
+        }
+/* End  */
